@@ -1,0 +1,611 @@
+:root{
+    --verde:##1b8f5a;
+    --verde-claro:#39b878;
+    --azul:#0d6efd;
+    --fondo:#f4faf7;
+    --blanco:#ffffff;
+    --texto:#263238;
+    --gris:#6c757d;
+
+    --sombra:0 10px 25px rgba(0,0,0,.10);
+
+    --radio:18px;
+}
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+
+
+body{
+
+    font-family:'Segoe UI',Arial,sans-serif;
+
+    background:var(--fondo);
+
+    color:var(--texto);
+
+    min-height:100vh;
+
+}
+
+
+
+/* ===========================
+        NAVBAR
+=========================== */
+
+
+.navbar{
+
+    background:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 8%;
+
+    box-shadow:var(--sombra);
+
+}
+
+
+
+.logo{
+
+    font-size:28px;
+
+    font-weight:bold;
+
+    color:var(--verde);
+
+}
+
+
+
+.logo i{
+
+    margin-right:10px;
+
+}
+
+
+
+.nav-links{
+
+    list-style:none;
+
+    display:flex;
+
+    gap:25px;
+
+}
+
+
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:var(--texto);
+
+    font-weight:600;
+
+}
+
+
+
+.nav-links a:hover,
+.active{
+
+    color:var(--verde)!important;
+
+}
+
+
+
+
+/* ===========================
+        HERO
+=========================== */
+
+
+.hero{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:40px;
+
+    padding:70px 8%;
+
+}
+
+
+
+.hero-text{
+
+    width:55%;
+
+}
+
+
+
+.hero h1{
+
+    font-size:48px;
+
+    color:var(--verde);
+
+    margin-bottom:20px;
+
+}
+
+
+
+.hero p{
+
+    font-size:20px;
+
+    line-height:1.6;
+
+}
+
+
+
+
+.hero-card{
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:var(--radio);
+
+    box-shadow:var(--sombra);
+
+    text-align:center;
+
+}
+
+
+
+.hero-card i{
+
+    font-size:70px;
+
+    color:var(--verde);
+
+}
+
+
+
+
+/* ===========================
+        BOTONES
+=========================== */
+
+
+.btn{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    padding:14px 30px;
+
+    border-radius:30px;
+
+    background:var(--verde);
+
+    color:white;
+
+    text-decoration:none;
+
+    border:none;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+}
+
+
+
+.btn:hover{
+
+    opacity:.85;
+
+}
+
+
+
+.secondary{
+
+    background:var(--azul);
+
+}
+
+
+
+/* ===========================
+        CARDS
+=========================== */
+
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+    padding:30px 8%;
+
+}
+
+
+
+.card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:var(--radio);
+
+    text-align:center;
+
+    box-shadow:var(--sombra);
+
+}
+
+
+
+.card i{
+
+    font-size:45px;
+
+    color:var(--verde);
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+/* ===========================
+        FORMULARIOS
+=========================== */
+
+
+.container{
+
+    padding:50px 8%;
+
+}
+
+
+
+.form-box{
+
+    background:white;
+
+    max-width:500px;
+
+    margin:auto;
+
+    padding:40px;
+
+    border-radius:var(--radio);
+
+    box-shadow:var(--sombra);
+
+}
+
+
+
+.form-box h1{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+    color:var(--verde);
+
+}
+
+
+
+form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+
+
+label{
+
+    font-weight:bold;
+
+}
+
+
+
+input,
+select,
+textarea{
+
+    padding:14px;
+
+    border-radius:10px;
+
+    border:1px solid #ccc;
+
+    font-size:16px;
+
+}
+
+
+
+
+/* ===========================
+        DASHBOARD
+=========================== */
+
+
+.dashboard{
+
+    padding:50px 8%;
+
+}
+
+
+
+.dashboard h1{
+
+    color:var(--verde);
+
+}
+
+
+
+.stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+    margin-top:40px;
+
+}
+
+
+
+.stat{
+
+    background:white;
+
+    padding:30px;
+
+    text-align:center;
+
+    border-radius:var(--radio);
+
+    box-shadow:var(--sombra);
+
+}
+
+
+
+.stat i{
+
+    font-size:45px;
+
+    color:var(--verde);
+
+}
+
+
+
+
+.quick{
+
+    margin-top:40px;
+
+}
+
+
+
+
+/* ===========================
+        TABLA
+=========================== */
+
+
+.table-box{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:var(--radio);
+
+    box-shadow:var(--sombra);
+
+}
+
+
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+
+}
+
+
+
+th{
+
+    background:var(--verde);
+
+    color:white;
+
+}
+
+
+
+th,
+td{
+
+    padding:15px;
+
+    border-bottom:1px solid #ddd;
+
+    text-align:center;
+
+}
+
+
+
+.status{
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    color:white;
+
+}
+
+
+
+.pendiente{
+
+    background:#dc3545;
+
+}
+
+
+
+.proceso{
+
+    background:#ffc107;
+
+    color:black;
+
+}
+
+
+
+.terminado{
+
+    background:#198754;
+
+}
+
+
+
+/* ===========================
+        FOOTER
+=========================== */
+
+
+footer{
+
+    background:#133b2a;
+
+    color:white;
+
+    padding:25px;
+
+    text-align:center;
+
+    margin-top:40px;
+
+}
+
+
+
+/* ===========================
+        RESPONSIVE
+=========================== */
+
+
+@media(max-width:900px){
+
+
+.hero{
+
+    flex-direction:column;
+
+}
+
+
+.hero-text{
+
+    width:100%;
+
+}
+
+
+.cards,
+.stats{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.navbar{
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+
+
+.nav-links{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+
+
+.hero h1{
+
+    font-size:35px;
+
+}
+
+
+}
